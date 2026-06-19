@@ -1,0 +1,31 @@
+{
+  "name": "cortex-plugin-pdf-toolkit",
+  "version": "1.0.0",
+  "description": "PDF Toolkit & Report Generator — Merge, split, fill forms, extract text/tables, sign, redact, generate reports",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-pdf-toolkit",
+  "homepage": "https://cortexprism.io/marketplace/plugins/pdf-toolkit",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "pdf_merge", "description": "Merge multiple PDFs", "params": [] },
+    { "name": "pdf_split", "description": "Split PDF into pages", "params": [] },
+    {
+      "name": "pdf_extract",
+      "description": "Extract text, tables, and data from PDF",
+      "params": []
+    },
+    {
+      "name": "pdf_generate",
+      "description": "Generate PDF report from template and data",
+      "params": []
+    },
+    { "name": "pdf_sign", "description": "Digitally sign PDF document", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
